@@ -2,9 +2,12 @@ html, body{
     padding: 0px;
     margin: 0px;
 }
+
+/* comienzo de maquetacion del header */
+
 header{
     width: 100%;
-    height: 80px;
+    height: auto;
 } 
 header h2 {
     margin-block-start: 0;
@@ -16,23 +19,47 @@ header h3 {
     justify-content: flex-start;
 }
 header .header-items-container{
-    background-color: aqua;
     display: grid;
     width: 100%;
     grid-template-columns: 50% 50%;
 }
 header .header-items-container .general-description-container{
     display: grid;
-    grid-template-rows: 50% 50%;    
+    grid-template-rows: 50% 50%;
+    
+}
+
+/* Fin de maquetacion del header */
+
+/* Comienzo de maquetacion del main */
+main{
+    width: 100%;
+    height: auto;    
+}
+main .general-main-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+}
+main .general-main-container .follower-container{
+    display: inherit;
+    grid-row: 1 / 2;
+    grid-column: 1 / 5;
+}
+main .general-main-container .follower-container .fb-media-container{
+    grid-column: 1 / 2;
+}
+main .general-main-container .follower-container .tw-media-container{
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+}
+main .general-main-container .follower-container .ig-media-container{
+    grid-column: 3 / 4;
+    grid-row: 1 / 2;
+}
+main .general-main-container .follower-container .yt-media-container{
+    grid-column: 4 / 5;
+    grid-row: 1 / 2;
 }
 
 
-
-sdfdsfsdaf
-
-dsafsdaf
-
-
-asdfsdfsdf
-
-asdfsdafsdf
