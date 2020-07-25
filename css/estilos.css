@@ -1,6 +1,7 @@
 html, body{
     padding: 0px;
     margin: 0px;
+    background-color: hsl(225, 100%, 98%);
 }
 header{
     width: 100%;
@@ -13,15 +14,19 @@ header h2 {
 header h3 {
     margin-block-start: 0;
     margin-block-end: 0;
-    justify-content: flex-start;
 }
-header .header-items-container{
-    background-color: aqua;
+
+.header-container .header-items-container{
     display: grid;
-    width: 100%;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: repeat(2,1fr);
+    margin: 20px 10px 5px 50px;
 }
-header .header-items-container .general-description-container{
-    display: grid;
-    grid-template-rows: 50% 50%;    
+.header-container .header-items-container .general-header-description-container{
+    font-family: "Inter", "sans-serif";
+    
+}
+.header-container .header-items-container .general-header-description-container h3{
+    font-family: "Inter", "sans-serif";
+    font-size: 15px;
+    color: hsl(228, 12%, 44%);
 }
