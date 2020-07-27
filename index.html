@@ -1,91 +1,275 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/estilos.css">
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/estilos.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
 
-  <title>Dimas' HTML & CSS Challenge</title>
-</head>
-<body>
-  <!-- Aqui comienza la seccion de Nav -->
-  <header class="header-container">
-    <section class="header-items-container">
-      <div class="general-header-description-container">
-        <h2>Social Media Dashboard</h2>
-        <h3>Total Followers: 23,004</h3>
-      </div>
-      <div class="button-container"> 
-        <button>Dark Mode</button>
-      </div>
-    </section>
-  </header>
-  <!-- Aqui termina la seccion de Nav -->
+    <title>Dimas' HTML & CSS Challenge</title>
+  </head>
+  <body>
+    <main class="main">
+      <!-- Aqui comienza la seccion de Nav -->
+      <header class="header">
+        <div class="header-items">
+          <h1>Social Media Dashboard</h1>
+          <p>Total Followers: 23,004</p>
+        </div>
+        <div class="header-dark">
+          <button>Dark Mode</button>
+        </div>
+      </header>
+      <!-- Aqui termina la seccion de Nav -->
+      <section class="grid">
+        <article class="grid-item facebook">
+          <header class="grid-item-header">
+            <img
+              class="social-img"
+              src="images/icon-facebook.svg"
+              alt="facebook-icon"
+            />
+            <p class="social-ref">@nathanf</p>
+          </header>
+          <section class="grid-item-info">
+            <p class="social-follows">1987</p>
+            <span class="social-text">followers</span>
+          </section>
+          <footer class="grid-item-footer">
+            <img
+              class="social-arrow"
+              src="images/icon-up.svg"
+              alt="arrow-up-icon"
+            />
+            <span class="social-span">12 Today</span>
+          </footer>
+        </article>
+        <article class="grid-item twitter">
+          <header class="grid-item-header">
+            <img
+              class="social-img"
+              src="images/icon-twitter.svg"
+              alt="facebook-icon"
+            />
+            <p class="social-ref">@nathanf</p>
+          </header>
+          <section class="grid-item-info">
+            <p class="social-follows">1044</p>
+            <span class="social-text">followers</span>
+          </section>
+          <footer class="grid-item-footer">
+            <img
+              class="social-arrow"
+              src="images/icon-up.svg"
+              alt="arrow-up-icon"
+            />
+            <span class="social-span">99 Today</span>
+          </footer>
+        </article>
+        <article class="grid-item instagram">
+          <header class="grid-item-header">
+            <img
+              class="social-img"
+              src="images/icon-instagram.svg"
+              alt="instagram-icon"
+            />
+            <p class="social-ref">@nathanf</p>
+          </header>
+          <section class="grid-item-info">
+            <p class="social-follows">11k</p>
+            <span class="social-text">followers</span>
+          </section>
+          <footer class="grid-item-footer">
+            <img
+              class="social-arrow"
+              src="images/icon-up.svg"
+              alt="arrow-up-icon"
+            />
+            <span class="social-span">1099 Today</span>
+          </footer>
+        </article>
+        <article class="grid-item youtube">
+          <header class="grid-item-header">
+            <img
+              class="social-img"
+              src="images/icon-youtube.svg"
+              alt="facebook-icon"
+            />
+            <p class="social-ref">Nathan F.</p>
+          </header>
+          <section class="grid-item-info">
+            <p class="social-follows">8239</p>
+            <span class="social-text">followers</span>
+          </section>
+          <footer class="grid-item-footer">
+            <img
+              class="social-arrow"
+              src="images/icon-down.svg"
+              alt="arrow-up-icon"
+            />
+            <span class="social-span">12 Today</span>
+          </footer>
+        </article>
+      </section>
+      <section>
+        <h2>Overview - Today</h2>
+        <div class="grid">
+          <article class="grid-item social-stats">
+            <p>Page Views</p>
+            <div class="social-stats-img">
+              <img src="images/icon-facebook.svg" alt="facebook-icon" />
+            </div>
+            <p>87</p>
+            <p class="social-percentage">3</p>
+          </article>
+        </div>
+      </section>
+      <footer>
+        <div class="attribution">Coded by <a href="#">Dimas Mendoza</a>.</div>
+      </footer>
+    </main>
+    <!-- Aqui comienza el main de la pagina -->
+    <!-- <main>
+      <!-- Aqui comienza la seccion de Facebook
+      <section class="general-main-container">
+        <section class="follower-container">
+          <div class="fb-media-container">
+            <p class="tags-names-superior">
+              <img src="images/icon-facebook.svg" alt="Facebook Icon" />@nathanf
+            </p>
+            <p class="quantity-followers">1987</p>
+            <p>Followers</p>
+            <p>12 Today</p>
+          </div>
+          <!-- Aqui termina la seccion de facebook
 
-  <!-- Aqui comienza el main de la pagina -->
-  
-  <main>
-  <!-- Aqui comienza la seccion de Facebook -->
-  <section class="general-main-container">
-    <section class="follower-container">
-      <div class="fb-media-container">
-        <img src="images/icon-facebook.svg" alt="Facebook Icon">
-        <p>@nathanf</p>
-        <p>1987</p>
-        <h3>Followers</h3>
-        <p>12 Today</p>
-      </div>
-      <!-- Aqui termina la seccion de facebook -->
-      
-      <!-- Aqui comienza la seccion de twitter -->
-      <div class="tw-media-container">
-        <img src="images/icon-twitter.svg" alt="Twitter Icon">
-        <p>@nathanf</p>
-        <p>1044</p>    
-        <h3>Followers</h3>
-        <p>99 Today</p>
-      </div>
-      <!-- Aqui termina la seccion de twitter -->
+          <!-- Aqui comienza la seccion de twitter
+          <div class="tw-media-container">
+            <p class="tags-names-superior">
+              <img src="images/icon-twitter.svg" alt="Twitter Icon" />@nathanf
+            </p>
+            <p class="quantity-followers">1044</p>
+            <p>Followers</p>
+            <p>99 Today</p>
+          </div>
+          <!-- Aqui termina la seccion de twitter 
+          <!-- Aqui termina la seccion de instagram 
+          <div class="ig-media-container">
+            <p class="tags-names-superior">
+              <img
+                src="images/icon-instagram.svg"
+                alt="Instagram Icon"
+              />@realnathanf
+            </p>
+            <p class="quantity-followers">11k</p>
+            <p>Followers</p>
+            <p>1099 Today</p>
+          </div>
+          <!-- Aqui termina la seccion de instagram 
 
-      <!-- Aqui termina la seccion de instagram -->
-      <div class="ig-media-container">
-        <img src="images/icon-instagram.svg" alt="Instagram Icon">
-        <p>@realnathanf</p>
-        <p>11k</p>
-        <h3>Followers</h3>
-        <p>1099 Today</p>
-      </div>
-      <!-- Aqui termina la seccion de instagram -->
+          <!-- Aqui comeinza la seccion de youtube 
+          <div class="yt-media-container">
+            <p class="tags-names-superior">
+              <img src="images/icon-youtube.svg" />Nathan F.
+            </p>
+            <p class="quantity-followers">8239</p>
+            <p>Subscribers</p>
+            <p>144 Today</p>
+          </div>
+        </section>
+        <!-- Aqui termina la seccion de youtube 
 
-      <!-- Aqui comeinza la seccion de youtube -->
-      <div class="yt-media-container">
-        <img src="images/icon-youtube.svg" alt="Youtube Icon">
-        <p>Nathan F.</p>
-        <p>8239</p>
-        <h3>Subscribers</h3>
-        <p>144 Today</p>
-      </div>
-    </section>
-    <!-- Aqui termina la seccion de youtube -->
+        <!-- Comienzo Seccion del Overview 
+        <section class="overview-container">
+          <h2>Overview - Today</h2>
+        </section>
+        <!-- Fin seccion del Overview 
 
-    <!--Comienzo Seccion del Overview -->
-    <!-- <section class="overview-container">
-      <h2>Overview - Today</h2>
-    </section> -->
-    <!-- Fin seccion del Overview -->
-    
-    <!-- Comienzo seccion del Vistas FB -->
-    <!-- seccion final -->
-  </section>
-</main>
-  <!-- Aqui termina el main de la pagina -->
+        <!-- Comienzo seccion del Vistas FB 
+        <!-- seccion final 
+      </section>
+      <section class="general-information-container">
+        <div class="fb-views-container">
+          <h4>Page Views</h4>
+          <img src="images/icon-facebook.svg" alt="Facebook Icon" />
+          <p>87</p>
+          <p>3%</p>
+        </div>
+        <!-- Fin seccion de vistas del FB 
 
-  <footer>
-    <div class="attribution">
-      Coded by <a href="#">Dimas Mendoza</a>.
-    </div>
-  </footer>
-</body>
+        <!-- Comienzo Seccion de likes FB 
+        <div class="fb-likes-container">
+          <p>Likes</p>
+          <img src="images/icon-facebook.svg" alt="Facebook Icon" />
+          <p>52</p>
+          <p>2%</p>
+        </div>
+        <!-- Fin de seccion de Likes Fb
+
+        <!-- Comienzo seccion Fav Insta
+        <div class="ig-likes-container">
+          <p>Likes</p>
+          <img src="images/icon-instagram.svg" alt="Instagram Icon" />
+          <p>5462</p>
+          <p>2257%</p>
+        </div>
+        <!-- Fin seccion Fav Insta
+
+        <!-- Comienzo seccion vistas perfil de Insta
+        <div class="ig-views-container">
+          <p>Profile Views</p>
+          <img src="images/icon-instagram.svg" alt="Instagram Icon" />
+          <p>52k</p>
+          <p>1375%</p>
+        </div>
+        <!-- Fin seccion vista de Insta
+
+        <!-- Comeinzo seccion Retweets TW
+        <div class="tw-rt-container">
+          <p>Retweets</p>
+          <img src="images/icon-twitter.svg" alt="Twitter Icon" />
+          <p>117</p>
+          <p>303%</p>
+        </div>
+        <!-- Fin seccion Retweets TW
+
+        <!-- Comienzo seccion Fav TW
+        <div class="tw-likes-container">
+          <p>Likes</p>
+          <img src="images/icon-twitter.svg" alt="Twitter Icon" />
+          <p>507</p>
+          <p>553%</p>
+        </div>
+        <!-- Fin seccion Fav Tw
+
+        <!-- Comienzo seccion likes YT
+        <div class="yt-likes-container">
+          <p>Likes</p>
+          <img src="images/icon-youtube.svg" alt="Youtube Icon" />
+          <p>107</p>
+          <p>19%</p>
+        </div>
+        <!-- Fin seccion likes YT
+
+        <!-- Comienzo seccion Vistas YT
+        <div class="yt-views-container">
+          <p>Total Views</p>
+          <img src="images/icon-youtube.svg" alt="Youtube Icon" />
+          <p>1407</p>
+          <p>12%</p>
+        </div>
+      </section>
+    </main> -->
+    <!-- Aqui termina el main de la pagina -->
+  </body>
 </html>
