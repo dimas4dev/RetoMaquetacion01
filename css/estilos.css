@@ -39,6 +39,7 @@ body {
   background-color: var(--white-bg);
   font-family: var(--font-family);
   font-weight: var(--font-size);
+  font-size: 14px;
 }
 
 /* comienzo de maquetacion del header */
@@ -111,169 +112,28 @@ header h2 {
   border-top: 0.5rem solid var(--yt-color);
 }
 .social-stats {
+  padding: 1rem;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(2, minmax(1rem, 15rem));
   align-items: center;
   text-align: left;
 }
-.social-stats-img {
-  display: block;
-  text-align: left;
+.social-stats > p {
+  margin: 0.5rem 0;
 }
-.social-stats .social-percentage:nth-child(even) {
+.social-stats > *:nth-child(even) {
+  text-align: right;
 }
 .social-percentage::before {
   content: " ";
   background-image: url("../images/icon-up.svg");
   background-repeat: no-repeat;
   background-position: center;
+  background-size: contain;
   display: inline-block;
-  height: 15px;
-  width: 10px;
+  height: 0.8rem;
+  width: 0.6rem;
 }
 .social-percentage::after {
   content: "%";
 }
-/* p {
-  margin-block-start: 0;
-  margin-block-end: 0;
-  margin: 5px;
-  padding: 5px;
-}
-main .general-main-container {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-}
-main .general-main-container .follower-container {
-  display: inherit;
-  grid-row: 1 / 2;
-  grid-column: 1 / 5;
-  font-family: "Inter", "sans-serif";
-  padding: 50px;
-  justify-content: space-evenly;
-}
-main .general-main-container .follower-container .fb-media-container {
-  grid-column: 1 / 2;
-  font-size: 15px;
-  border: solid 1px;
-  padding: 5px 25px 25px 25px;
-  margin: 10px 10px 10px 10px;
-  text-align: center;
-  border-radius: 4px;
-  background-color: hsl(227, 47%, 96%);
-  border-top: solid 5px hsl(195, 100%, 50%);
-}
-main .general-main-container .follower-container .tw-media-container {
-  grid-column: 2 / 3;
-  grid-row: 1 / 2;
-  border: solid 1px;
-  padding: 5px 25px 25px 25px;
-  margin: 10px 10px 10px 10px;
-  text-align: center;
-  border-radius: 4px;
-  background-color: hsl(227, 47%, 96%);
-  border-top: solid 5px hsl(203, 89%, 53%);
-}
-main .general-main-container .follower-container .ig-media-container {
-  grid-column: 3 / 4;
-  grid-row: 1 / 2;
-  border: solid 1px;
-  padding: 5px 25px 25px 25px;
-  margin: 10px 10px 10px 10px;
-  text-align: center;
-  border-radius: 4px;
-  background-color: hsl(227, 47%, 96%);
-  border-image-source: linear-gradient(
-    to left,
-    hsl(37, 97%, 70%),
-    hsl(329, 70%, 58%)
-  );
-}
-main .general-main-container .follower-container .yt-media-container {
-  grid-column: 4 / 5;
-  grid-row: 1 / 2;
-  border: solid 1px;
-  padding: 5px 25px 25px 25px;
-  margin: 10px 10px 10px 10px;
-  text-align: center;
-  border-radius: 4px;
-  border-top: solid 5px hsl(348, 97%, 39%);
-}
-
-main .general-main-container .follower-container .quantity-followers {
-  font-size: 3em;
-  font-weight: bold;
-}
-main .general-main-container .follower-container .tags-names-superior {
-  font-size: 12px;
-  font-weight: bold;
-  color: hsl(228, 12%, 44%);
-}
-
-/* Fin seccion vistas 
-main .general-main-container .overview-container {
-  text-align: start;
-  padding: 50px;
-  grid-column: 1 / 5;
-  font-family: "Inter", "sans-serif";
-  color: hsl(228, 12%, 44%);
-  width: 100%;
-  height: 80px;
-}
-main .general-information-container {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-  font-family: "Inter", "sans-serif";
-  padding: 50px;
-  justify-content: space-evenly;
-}
-main .general-information-container .fb-views-container {
-  grid-column: 1/ 2;
-  grid-rows: 1/ 2;
-  border: solid 1px black;
-  border-radius: 5px;
-}
-main .general-information-container .fb-likes-container {
-  grid-column: 2 / 3;
-  grid-rows: 1/ 2;
-  border: solid 1px black;
-  border-radius: 5px;
-}
-main .general-information-container .ig-likes-container {
-  grid-column: 3 / 4;
-  grid-rows: 1/ 2;
-  border: solid 1px black;
-  border-radius: 5px;
-}
-main .general-information-container .ig-views-container {
-  grid-column: 4/ 5;
-  grid-rows: 1/ 2;
-  border: solid 1px black;
-  border-radius: 5px;
-}
-main .general-information-container .tw-rt-container {
-  grid-column: 1/ 2;
-  grid-rows: 2/ 2;
-  border: solid 1px black;
-  border-radius: 5px;
-}
-main .general-information-container .tw-likes-container {
-  grid-column: 2 / 3;
-  grid-rows: 2 / 2;
-  border: solid 1px black;
-  border-radius: 5px;
-}
-main .general-information-container .yt-likes-container {
-  grid-column: 3 / 4;
-  grid-rows: 2 / 2;
-  border: solid 1px black;
-  border-radius: 5px;
-}
-main .general-information-container .yt-views-container {
-  grid-column: 4 / 5;
-  grid-rows: 2 / 2;
-  border: solid 1px black;
-  border-radius: 5px;
-} */
