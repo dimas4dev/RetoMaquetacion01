@@ -29,7 +29,8 @@
 
   /* Estilo de fuente */
   --font-family: "Inter", "sans-serif";
-  --font-size: 400;
+  --font-size: 14px;
+  --font-weight: 400;
   --font-bold: 700;
 }
 html,
@@ -38,8 +39,8 @@ body {
   margin: 0px;
   background-color: var(--white-bg);
   font-family: var(--font-family);
-  font-weight: var(--font-size);
-  font-size: 14px;
+  font-weight: var(--font-weight);
+  font-size: var(--font-size);
 }
 
 /* comienzo de maquetacion del header */
@@ -54,28 +55,16 @@ body {
   justify-content: space-between;
   align-items: center;
 }
-header h2 {
-  margin-block-start: 0;
-  margin-block-end: 0;
+.header-title {
+  margin: 0.1rem 0;
+  font-weight: var(--font-bold);
+  /* font-size: var(--font-size); */
+}
+.header-subtitle {
+  color: var(--dark-grayish-Blue-text);
+  margin: 0;
 }
 
-.header-items-container {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  margin: 20px 10px 5px 50px;
-}
-.header-container
-  .header-items-container
-  .general-header-description-container
-  h3 {
-  font-family: "Inter", "sans-serif";
-  font-size: 15px;
-  color: hsl(228, 12%, 44%);
-}
-
-/* Fin de maquetacion del header */
-
-/* Comienzo de maquetacion del main */
 .grid {
   margin: 2rem auto;
   display: grid;
@@ -124,6 +113,9 @@ header h2 {
 .social-stats > *:nth-child(even) {
   text-align: right;
 }
+.social-percentage {
+  color: var(--lime-green);
+}
 .social-percentage::before {
   content: " ";
   background-image: url("../images/icon-up.svg");
@@ -136,4 +128,41 @@ header h2 {
 }
 .social-percentage::after {
   content: "%";
+}
+.grid-item-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5em;
+}
+.social-ref::before {
+  content: " ";
+  background-image: url("../images/icon-facebook.svg");
+  width: 1.42rem;
+  height: 1.42rem;
+  display: inline-block;
+}
+.social-span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--lime-green);
+}
+.social-span::before {
+  content: " ";
+  background-image: url("../images/icon-up.svg");
+  width: 1.42rem;
+  height: 1.42rem;
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.social-text {
+  font-size: 28px;
+}
+.negative {
+  color: var(--bright-red);
+}
+.negative::before {
+  background-image: url("../images/icon-down.svg");
 }
