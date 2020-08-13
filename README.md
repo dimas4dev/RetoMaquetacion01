@@ -32,3 +32,5 @@ Para poder acceder a proyecto tendrias que bajar el repositorio en Local y ejecu
 Con esto solo debes ejecutar el archivo index.html desde un navegador y veras el estado del proyecto
 
 Si quisieras modificar el codigo deberas ejecutar el archivo Index.html en tu editor de codigo de preferencia y asi veras la estructura principal del archivo. si quieres ver los estilos de la pagina tendras que ejecutar el archivo estilos.css que se encuentra en la carpeta css. Esto tambien se debe ejecutar desde un editor de texto.
+
+El proyecto principal se encuentra en la rama de Main.
